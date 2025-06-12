@@ -36,7 +36,7 @@ export default function ClientParcelTable({ parcels }: { parcels: any[] }) {
 
   return (
     <main className="p-6 max-w-6xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Van Metre Land Analyzer 🏡</h1>
+      <h1 className="text-2xl font-bold mb-4">Deal Breaker</h1>
 
       <table className="w-full text-sm bg-white shadow rounded-lg border">
         <thead className="bg-gray-100 text-left">
@@ -77,7 +77,7 @@ export default function ClientParcelTable({ parcels }: { parcels: any[] }) {
         disabled={selected.size === 0 || loading}
         onClick={analyze}
       >
-        {loading ? 'Analyzing...' : 'Analyze with AI'}
+        {loading ? 'Analyzing...' : 'Analyze'}
       </button>
 
       {aiSummary && (
